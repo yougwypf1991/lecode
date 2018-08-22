@@ -1,0 +1,2 @@
+# lecode
+exercise of daily
