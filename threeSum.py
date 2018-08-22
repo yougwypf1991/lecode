@@ -6,7 +6,6 @@ class Solution(object):
         """
         # to save result
         res_list = []
-        # 对nums列表进行排序，无返回值，排序直接改变nums顺序
         nums.sort()
         for i in range(len(nums)):
             # now nums = [-4, -1, -1, 0, 1, 2]
