@@ -1,0 +1,27 @@
+'''
+反转两个整数
+'''
+class Solution:
+    def reverse(self, x):
+        """
+        :type x: int
+        :rtype: int
+        """
+        symbol_flag = 0
+        x_str = str(x)
+        if x_str[0] == '-':
+            symbol_flag = 1
+            x_str = x_str[1::]
+        x_str = x_str[::-1]
+        if symbol_flag:
+            x_str = '-' + x_str 
+        a = int(x_str)
+        if -2147483648 < a < 2147483647:
+            return a
+        else:
+            return 0
+    
+if __name__ == '__main__':
+    s = Solution()
+    ret = s.reverse(1563847412)
+    print(ret)
